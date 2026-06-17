@@ -3,385 +3,558 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy – PixelKit</title>
+  <meta name="description" content="Privacy Policy for PixelKit - All-in-One Image Tools Studio">
+  <title>Privacy Policy - PixelKit</title>
   <style>
     :root {
       --primary:   #FF6B6B;
       --secondary: #4ECDC4;
-      --dark:      #1A1A2E;
-      --gray:      #6B7280;
-      --light:     #F7F8FC;
+      --text:      #1A1A2E;
+      --text-secondary: #555;
+      --bg:        #ffffff;
+      --bg-secondary: #F7F8FC;
+      --border:    #e0e0e0;
     }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text:      #e0e0e0;
+        --text-secondary: #aaa;
+        --bg:        #0d1117;
+        --bg-secondary: #161b22;
+        --border:    #30363d;
+      }
+    }
+
     * { margin:0; padding:0; box-sizing:border-box; }
+
     body {
-      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
       line-height: 1.7;
-      color: var(--dark);
-      background: var(--light);
+      color: var(--text);
+      background: var(--bg);
+      padding: 0;
     }
-    header {
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      color: white;
-      padding: 4rem 1.5rem 3rem;
-      text-align: center;
-    }
-    header h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: .5rem; }
-    header p  { font-size: 1.1rem; opacity: .9; }
+
     .container {
       max-width: 800px;
       margin: 0 auto;
-      padding: 2rem 1.5rem 4rem;
+      padding: 40px 24px;
     }
-    section { margin-bottom: 2.5rem; }
-    h2 {
-      font-size: 1.4rem;
-      font-weight: 700;
-      color: var(--primary);
-      margin-bottom: 1rem;
-      padding-bottom: .4rem;
-      border-bottom: 2px solid var(--secondary);
-    }
-    h3 {
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: var(--dark);
-      margin: 1.2rem 0 .6rem;
-    }
-    p, ul, li { margin-bottom: .75rem; }
-    ul { padding-left: 1.5rem; }
-    li { margin-bottom: .4rem; }
-    a { color: var(--primary); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .highlight {
-      background: #FFF3F3;
-      border-left: 4px solid var(--primary);
-      padding: 1rem 1.2rem;
-      margin: 1rem 0;
-      border-radius: 0 8px 8px 0;
-    }
-    .contact-box {
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      color: white;
-      padding: 1.5rem;
-      border-radius: 16px;
-      margin-top: 2rem;
-    }
-    .contact-box a { color: #FFF; font-weight: 600; }
-    .footer {
+
+    header {
       text-align: center;
-      padding: 2rem;
-      color: var(--gray);
-      font-size: .9rem;
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 2px solid var(--border);
     }
+
+    .logo {
+      width: 64px;
+      height: 64px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      border-radius: 16px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+      font-size: 28px;
+      color: white;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+
+    .subtitle {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+    }
+
+    .last-updated {
+      display: inline-block;
+      background: var(--bg-secondary);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      margin-top: 16px;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: 40px 0 16px;
+      color: var(--text);
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--primary);
+      display: inline-block;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin: 28px 0 12px;
+      color: var(--text);
+    }
+
+    p {
+      margin-bottom: 16px;
+      color: var(--text-secondary);
+    }
+
+    ul, ol {
+      margin: 16px 0 16px 24px;
+      color: var(--text-secondary);
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .highlight-box {
+      background: var(--bg-secondary);
+      border-left: 4px solid var(--primary);
+      padding: 20px;
+      border-radius: 0 8px 8px 0;
+      margin: 24px 0;
+    }
+
+    .highlight-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .warning-box {
+      background: #fff3cd;
+      border-left: 4px solid #ffc107;
+      padding: 20px;
+      border-radius: 0 8px 8px 0;
+      margin: 24px 0;
+    }
+
+    .warning-box p {
+      color: #856404;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .warning-box {
+        background: #3d3a20;
+      }
+      .warning-box p {
+        color: #e0d8b0;
+      }
+    }
+
     table {
       width: 100%;
       border-collapse: collapse;
       margin: 1rem 0;
       font-size: .95rem;
     }
+
     th, td {
       padding: .75rem;
       text-align: left;
-      border-bottom: 1px solid #E5E7EB;
+      border-bottom: 1px solid var(--border);
     }
+
     th {
-      background: var(--light);
+      background: var(--bg-secondary);
       font-weight: 600;
-      color: var(--dark);
+      color: var(--text);
     }
-    @media print {
-      header { background: white !important; color: var(--dark) !important; }
-      .contact-box { background: white !important; color: var(--dark) !important; border: 2px solid var(--primary); }
+
+    .contact-info {
+      background: var(--bg-secondary);
+      padding: 24px;
+      border-radius: 12px;
+      margin-top: 32px;
+    }
+
+    .contact-info h3 {
+      margin-top: 0;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 24px 16px;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      h2 {
+        font-size: 1.25rem;
+      }
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <header>
+      <div class="logo">&#128247;</div>
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">PixelKit - All-in-One Image Tools Studio</p>
+      <div class="last-updated">Last Updated: June 16, 2026</div>
+    </header>
 
-<!-- ═══════════════════════════════════════════ -->
-<!-- HEADER                                      -->
-<!-- ═══════════════════════════════════════════ -->
-<header>
-  <h1>Privacy Policy</h1>
-  <p>PixelKit — All-in-One Image Tools Studio</p>
-</header>
+    <section>
+      <h2>1. Introduction</h2>
+      <p>
+        Abdulghani Mawlood operates the PixelKit mobile application (the "App"). 
+        This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our App.
+      </p>
+      <p>
+        We respect your privacy and are committed to protecting your personal data. 
+        Please read this Privacy Policy carefully. If you do not agree with the terms of this Privacy Policy, 
+        please do not access the App.
+      </p>
+      <div class="highlight-box">
+        <p><strong>Key Point:</strong> All image processing in PixelKit happens <em>locally on your device</em>. Your photos are never uploaded to our servers. We do not collect analytics, crash logs, or any usage statistics.</p>
+      </div>
+    </section>
 
-<div class="container">
+    <section>
+      <h2>2. Information We Collect</h2>
+      
+      <h3>2.1 Information You Provide</h3>
+      <p>
+        PixelKit is designed to work <strong>without requiring any personal information</strong> from you. 
+        We do not ask for your name, email address, phone number, or any other personally identifiable information.
+      </p>
+      <p>
+        The only user input we process are the images you select for editing and any text you type into tools such as Watermark, Text on Image, or WiFi QR Code. This data is processed entirely on your device and is never transmitted to our servers.
+      </p>
 
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- 1. INTRODUCTION                             -->
-  <!-- ═══════════════════════════════════════════ -->
-  <section>
-    <h2>1. Introduction</h2>
-    <p>
-      Welcome to <strong>PixelKit</strong>. We respect your privacy and are committed to protecting your personal data.
-      This Privacy Policy explains how we collect, use, store, and safeguard your information when you use our Android application.
-    </p>
-    <p>
-      <strong>Effective Date:</strong> June 15, 2026<br>
-      <strong>Last Updated:</strong> June 15, 2026
-    </p>
-    <div class="highlight">
-      <strong>Key Point:</strong> All image processing in PixelKit happens <em>locally on your device</em>. Your photos are never uploaded to our servers.
+      <h3>2.2 Information Collected Automatically</h3>
+      <p>When you use the App, we may collect the following types of information:</p>
+      
+      <div class="highlight-box">
+        <p><strong>Local App Data:</strong> Your favorites, recent tools, theme preferences, JPEG quality settings, auto-delete settings, and in-app review status are stored <strong>locally on your device</strong> using SharedPreferences. This data never leaves your device and is not transmitted to our servers.</p>
+      </div>
+
+      <h3>2.3 Device Information & Advertising Data</h3>
+      <p>
+        We may collect non-personal information about your device, including:
+      </p>
+      <ul>
+        <li>Device model and operating system version</li>
+        <li>Device Advertising ID (for ad personalization)</li>
+        <li>App version and usage statistics (ad impressions, clicks)</li>
+        <li>Approximate location (IP-based, for regional ad targeting)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Data We Do <em>Not</em> Collect</h2>
+      <p>PixelKit explicitly does <strong>not</strong> collect or process the following:</p>
+      <ul>
+        <li><strong>Your photos or images:</strong> All image processing is done locally on your device. We never access, upload, or store your images.</li>
+        <li><strong>App interactions / Analytics:</strong> We do not track which tools you use, how often you use them, or your in-app behavior.</li>
+        <li><strong>Crash logs / Diagnostics:</strong> We do not collect crash reports or performance diagnostics.</li>
+        <li><strong>Personal identifiers:</strong> We do not collect your name, email, phone number, or address.</li>
+        <li><strong>Location data:</strong> We do not track your GPS location. AdMob may use approximate location at the country/region level.</li>
+        <li><strong>Contacts or messages:</strong> We do not access your contact list, SMS, or call history.</li>
+        <li><strong>Browsing history:</strong> We do not track your web browsing activity.</li>
+        <li><strong>WiFi credentials:</strong> WiFi QR Code tool uses your input locally to generate a QR image. We do not store or transmit network names or passwords.</li>
+        <li><strong>EXIF metadata from images:</strong> The Image Metadata tool displays EXIF data locally on your device. This data is not uploaded or stored by us.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Advertising and Third-Party Services</h2>
+
+      <h3>4.1 Google AdMob</h3>
+      <p>
+        PixelKit uses <strong>Google AdMob</strong> to display advertisements. 
+        AdMob may collect the following data to provide personalized or non-personalized ads:
+      </p>
+      <table>
+        <tr>
+          <th>Data Type</th>
+          <th>Purpose</th>
+          <th>Shared With</th>
+        </tr>
+        <tr>
+          <td>Advertising ID</td>
+          <td>Display personalized/non-personalized advertisements</td>
+          <td>Google (AdMob)</td>
+        </tr>
+        <tr>
+          <td>Approximate Location</td>
+          <td>Regional ad targeting and ad relevance</td>
+          <td>Google (AdMob)</td>
+        </tr>
+        <tr>
+          <td>Device Information</td>
+          <td>Ad delivery, fraud prevention, ad format optimization</td>
+          <td>Google (AdMob)</td>
+        </tr>
+        <tr>
+          <td>IP Address</td>
+          <td>Fraud prevention and ad delivery</td>
+          <td>Google (AdMob)</td>
+        </tr>
+      </table>
+
+      <h3>4.2 Ad Formats Used</h3>
+      <ul>
+        <li><strong>Banner Ads:</strong> Small ads shown at the bottom of the Home, Files, Favorites, and Settings screens.</li>
+        <li><strong>Interstitial Ads:</strong> Full-screen ads shown occasionally after completing a tool action.</li>
+        <li><strong>No Rewarded Ads:</strong> PixelKit does <em>not</em> use rewarded video ads requiring you to watch ads to unlock features.</li>
+      </ul>
+
+      <h3>4.3 Google AdMob Privacy</h3>
+      <p>
+        Google AdMob operates under Google's Privacy Policy. For more information on how Google uses data, 
+        please visit: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>
+      </p>
+      <p>
+        You can learn more about Google AdMob's data practices at: 
+        <a href="https://developers.google.com/admob/android/privacy" target="_blank" rel="noopener">https://developers.google.com/admob/android/privacy</a>
+      </p>
+
+      <h3>4.4 Google Play In-App Review</h3>
+      <p>
+        PixelKit uses Google's In-App Review API to politely ask satisfied users to rate the App on the Play Store after several successful tool uses. This is entirely optional and respects your choice if declined.
+      </p>
+    </section>
+
+    <section>
+      <h2>5. How We Use Your Information</h2>
+      <p>We use the information we collect to:</p>
+      <ul>
+        <li>Provide and maintain the App's core functionality (all processing is local)</li>
+        <li>Save your preferences (theme, favorites, JPEG quality) locally on your device</li>
+        <li>Remember your recent tools and favorites for quick access</li>
+        <li>Display relevant advertisements to support the App's ongoing development</li>
+        <li>Request optional Play Store ratings via Google's In-App Review API</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. Data Storage and Security</h2>
+      
+      <h3>6.1 Local Processing</h3>
+      <p>
+        All image editing, compression, conversion, and other processing occurs entirely on your device. Your images never leave your phone. We do not operate any backend servers for image processing.
+      </p>
+
+      <h3>6.2 Temporary Files</h3>
+      <p>
+        PixelKit creates temporary output files during processing (e.g., converted images, compressed images, PDFs, collages, circle crops, comparison exports). These are stored in your device's temporary directory and can be previewed, saved, shared, or deleted using the in-app File Manager. The operating system may also clear temporary files automatically over time.
+      </p>
+
+      <h3>6.3 Ad Data</h3>
+      <p>
+        Advertising-related data (Advertising ID, approximate location, device info) is transmitted securely via HTTPS to Google's AdMob servers. We do not retain or store this data ourselves.
+      </p>
+
+      <h3>6.4 Data Security</h3>
+      <p>
+        We implement appropriate technical measures to protect your information. 
+        However, no method of transmission over the Internet or electronic storage is 100% secure. 
+        While we strive to use commercially acceptable means to protect your personal information, 
+        we cannot guarantee its absolute security.
+      </p>
+    </section>
+
+    <section>
+      <h2>7. Permissions We Request</h2>
+      <p>PixelKit requests the following Android permissions:</p>
+      <ul>
+        <li><strong>Internet:</strong> Required for loading advertisements.</li>
+        <li><strong>Camera:</strong> Required to capture photos directly within the app (e.g., Background Remover, Circle Crop, Collage Maker). We do not collect or upload camera data.</li>
+        <li><strong>Write External Storage (Android &le; 10 only):</strong> Required to save processed images to your device gallery on older Android versions. Modern Android uses scoped storage and does not require this permission.</li>
+      </ul>
+      <div class="highlight-box">
+        <p><strong>Important:</strong> We do not request read storage permissions. Image selection uses the Android Photo Picker, which does not require storage access permissions on Android 13+.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>8. Your Data Protection Rights</h2>
+      <p>Depending on your location, you may have the following rights regarding your data:</p>
+      
+      <h3>8.1 General Rights</h3>
+      <ul>
+        <li><strong>Opt-Out of Personalized Ads:</strong> Disable personalized advertising in your device settings or Google Ad Settings.</li>
+        <li><strong>Delete Temporary Files:</strong> Use the in-app File Manager to delete any files created by PixelKit.</li>
+        <li><strong>Clear Local Data:</strong> Uninstalling the App will remove all locally stored data from your device.</li>
+      </ul>
+
+      <h3>8.2 GDPR Rights (for EU/EEA Users)</h3>
+      <p>If you are a resident of the European Economic Area (EEA), you have the following data protection rights under the General Data Protection Regulation (GDPR):</p>
+      <ul>
+        <li><strong>The right to access</strong> — You have the right to request copies of your personal data.</li>
+        <li><strong>The right to rectification</strong> — You have the right to request that we correct any information you believe is inaccurate or complete information you believe is incomplete.</li>
+        <li><strong>The right to erasure ("right to be forgotten")</strong> — You have the right to request that we erase your personal data, under certain conditions.</li>
+        <li><strong>The right to restrict processing</strong> — You have the right to request that we restrict the processing of your personal data, under certain conditions.</li>
+        <li><strong>The right to object to processing</strong> — You have the right to object to our processing of your personal data, under certain conditions.</li>
+        <li><strong>The right to data portability</strong> — You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.</li>
+        <li><strong>The right to withdraw consent</strong> — Where we rely on your consent to process your personal data, you have the right to withdraw that consent at any time.</li>
+      </ul>
+      <p>
+        Since all your app data (favorites, recent tools, preferences) is stored locally on your device, you have complete control. Uninstalling the App will remove all locally stored data. If you wish to exercise any of these rights, please contact us at <a href="mailto:aghani.labs@gmail.com">aghani.labs@gmail.com</a>.
+      </p>
+
+      <h3>8.3 Opting Out of Ads Personalization</h3>
+      <p>
+        You can opt out of personalized advertising at any time:
+      </p>
+      <ul>
+        <li>Through your device settings (Android: <strong>Settings &rarr; Google &rarr; Ads &rarr; Opt out of Ads Personalization</strong>)</li>
+        <li>Through <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">Google Ads Settings</a></li>
+      </ul>
+
+      <h3>8.4 Managing or Revoking Your Consent</h3>
+      <p>
+        If you are located in the EEA, UK, or Switzerland, you can manage or withdraw your consent to personalized ads at any time through your device settings. Additionally, you may contact us at <a href="mailto:aghani.labs@gmail.com">aghani.labs@gmail.com</a> to request changes to how your data is handled.
+      </p>
+    </section>
+
+    <section>
+      <h2>9. Children's Privacy</h2>
+      <p>
+        Our App is not intended for use by children under the age of 13 (or 16 in the EU). 
+        We do not knowingly collect personally identifiable information from children. 
+        If you are a parent or guardian and believe your child has provided us with personal information, 
+        please contact us so we can take appropriate action.
+      </p>
+    </section>
+
+    <section>
+      <h2>10. U.S. State Age Verification Laws (Texas SB 2420)</h2>
+      <p>
+        In compliance with Texas' App Store Accountability Act (Texas SB 2420) and similar laws in other U.S. states,
+        Google Play may provide our App with age signals indicating a user's age range or parental consent status
+        for users in applicable states.
+      </p>
+      <div class="highlight-box">
+        <p><strong>How we handle age signals:</strong> If our App receives age or parental consent signals from Google Play,
+        we use this information solely to ensure our App functions appropriately for the user's age group.
+        We do not retain, store, or use this data for any other purpose. Any such data is deleted immediately
+        after the required verification process is complete, in accordance with applicable law.</p>
+      </div>
+      <p>
+        Since PixelKit is a general utility app with no age-restricted content, we do not restrict access
+        based on age signals beyond what is required by law. We do not sell or share age signal data with any third parties.
+      </p>
+    </section>
+
+    <section>
+      <h2>11. Third-Party Services</h2>
+      <p>PixelKit integrates with the following third-party services:</p>
+      <table>
+        <tr>
+          <th>Service</th>
+          <th>Provider</th>
+          <th>Purpose</th>
+          <th>Privacy Policy</th>
+        </tr>
+        <tr>
+          <td>Google AdMob</td>
+          <td>Google LLC</td>
+          <td>Display advertisements</td>
+          <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Link</a></td>
+        </tr>
+        <tr>
+          <td>Google Play In-App Review</td>
+          <td>Google LLC</td>
+          <td>Request app ratings on Play Store</td>
+          <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Link</a></td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>12. International Data Transfers</h2>
+      <p>
+        Your information, including personal data, may be transferred to &mdash; and maintained on &mdash; computers located outside of your 
+        state, province, country, or other governmental jurisdiction where the data protection laws may differ from those in your jurisdiction.
+      </p>
+      <p>
+        If you are located outside the United States and choose to use the App, please note that we transfer data to 
+        Google LLC in the United States for advertising services (Google AdMob). By using the App, you consent to this transfer.
+      </p>
+    </section>
+
+    <section>
+      <h2>13. Changes to This Privacy Policy</h2>
+      <p>
+        We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy 
+        at this page and updating the "Last Updated" date at the top. You are advised to review this Privacy Policy periodically 
+        for any changes.
+      </p>
+      <p>
+        Changes to this Privacy Policy are effective when they are posted on this page.
+      </p>
+    </section>
+
+    <section>
+      <h2>14. Consent and Agreement</h2>
+      <p>
+        By using PixelKit, you consent to our Privacy Policy and agree to its terms. 
+        This App complies with the Google Play Developer Program Policies and all applicable laws and regulations regarding data protection.
+      </p>
+    </section>
+
+    <section>
+      <h2>15. Open Source Licenses</h2>
+      <p>PixelKit uses the following open-source software:</p>
+      <ul>
+        <li>Flutter SDK &mdash; BSD License</li>
+        <li>Google Mobile Ads SDK &mdash; Apache 2.0</li>
+        <li>image (Dart image processing) &mdash; Apache 2.0</li>
+        <li>Provider (state management) &mdash; MIT License</li>
+        <li>qr_flutter &mdash; BSD License</li>
+        <li>share_plus &mdash; BSD License</li>
+        <li>And other packages as listed in the app's About section</li>
+      </ul>
+    </section>
+
+    <div class="contact-info">
+      <h3>Contact Us</h3>
+      <p>
+        If you have any questions about this Privacy Policy, please contact us:
+      </p>
+      <ul>
+        <li><strong>Developer:</strong> Abdulghani Mawlood</li>
+        <li><strong>Email:</strong> <a href="mailto:aghani.labs@gmail.com">aghani.labs@gmail.com</a></li>
+        <li><strong>App:</strong> PixelKit - All-in-One Image Tools Studio</li>
+        <li><strong>Terms of Service:</strong> <a href="https://abdulghani91.github.io/PixelKit/terms-of-service.html">View here</a></li>
+      </ul>
     </div>
-  </section>
 
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- 2. INFORMATION WE COLLECT                   -->
-  <!-- ═══════════════════════════════════════════ -->
-  <section>
-    <h2>2. Information We Collect</h2>
-    <p>PixelKit collects minimal data to provide and improve our services:</p>
-
-    <h3>2.1 Data Collected Automatically</h3>
-    <table>
-      <tr>
-        <th>Data Type</th>
-        <th>Purpose</th>
-        <th>Shared With</th>
-      </tr>
-      <tr>
-        <td>Advertising ID</td>
-        <td>Display personalized advertisements via Google AdMob</td>
-        <td>Google (AdMob)</td>
-      </tr>
-      <tr>
-        <td>Device Information</td>
-        <td>App compatibility, crash diagnosis, analytics</td>
-        <td>Google (Firebase)</td>
-      </tr>
-      <tr>
-        <td>App Interactions</td>
-        <td>Understand which tools are popular, improve UX</td>
-        <td>Google (Firebase Analytics)</td>
-      </tr>
-      <tr>
-        <td>Crash Logs</td>
-        <td>Identify and fix app crashes</td>
-        <td>Google (Firebase Crashlytics)</td>
-      </tr>
-    </table>
-
-    <h3>2.2 Data We Do <em>Not</em> Collect</h3>
-    <ul>
-      <li><strong>Your photos or images:</strong> All image processing is done locally on your device. We never access, upload, or store your images.</li>
-      <li><strong>Personal identifiers:</strong> We do not collect your name, email, phone number, or address.</li>
-      <li><strong>Location data:</strong> We do not track your GPS location.</li>
-      <li><strong>Contacts or messages:</strong> We do not access your contact list, SMS, or call history.</li>
-      <li><strong>Browsing history:</strong> We do not track your web browsing activity.</li>
-    </ul>
-  </section>
-
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- 3. HOW WE USE YOUR INFORMATION              -->
-  <!-- ═══════════════════════════════════════════ -->
-  <section>
-    <h2>3. How We Use Your Information</h2>
-    <p>We use the limited data we collect for the following purposes:</p>
-    <ul>
-      <li><strong>App Functionality:</strong> To provide core image editing, conversion, compression, and other tools.</li>
-      <li><strong>Advertising:</strong> To display banner and interstitial ads through Google AdMob. Ads help keep PixelKit free.</li>
-      <li><strong>Analytics:</strong> To understand feature usage and prioritize improvements.</li>
-      <li><strong>Crash Reporting:</strong> To detect, diagnose, and fix technical issues.</li>
-      <li><strong>App Improvement:</strong> To optimize performance and user experience based on aggregated data.</li>
-    </ul>
-  </section>
-
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- 4. ADVERTISING & GOOGLE ADMOB               -->
-  <!-- ═══════════════════════════════════════════ -->
-  <section>
-    <h2>4. Advertising & Google AdMob</h2>
-    <p>
-      PixelKit uses <strong>Google AdMob</strong> to display advertisements. AdMob is a mobile advertising platform operated by Google LLC.
-    </p>
-    <h3>4.1 Ad Formats Used</h3>
-    <ul>
-      <li><strong>Banner Ads:</strong> Small ads shown at the bottom of tool screens.</li>
-      <li><strong>Interstitial Ads:</strong> Full-screen ads shown occasionally after completing a tool action.</li>
-    </ul>
-    <div class="highlight">
-      <strong>Note:</strong> PixelKit does <em>not</em> use rewarded video ads. There are no "watch ad to unlock" or "watch ad for premium features" mechanisms in the app.
-    </div>
-
-    <h3>4.2 Data Collected by AdMob</h3>
-    <p>Google AdMob may collect and process the following data:</p>
-    <ul>
-      <li>Device identifiers (Advertising ID, Android ID)</li>
-      <li>IP address (for fraud prevention and ad delivery)</li>
-      <li>Device type, OS version, and screen size</li>
-      <li>General location (country/region level, not precise GPS)</li>
-      <li>App interaction data (ad impressions, clicks)</li>
-    </ul>
-    <p>For more information, please review Google's privacy policy:</p>
-    <ul>
-      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
-      <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Google Advertising Policies</a></li>
-    </ul>
-
-    <h3>4.3 Ad Personalization Opt-Out</h3>
-    <p>You can opt out of personalized ads at any time:</p>
-    <ul>
-      <li>On Android: Go to <strong>Settings → Google → Ads → Opt out of Ads Personalization</strong></li>
-      <li>Visit <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer">Google Ad Settings</a> to manage your ad preferences across apps</li>
-    </ul>
-  </section>
-
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- 5. THIRD-PARTY SERVICES                     -->
-  <!-- ═══════════════════════════════════════════ -->
-  <section>
-    <h2>5. Third-Party Services</h2>
-    <p>PixelKit integrates with the following third-party services:</p>
-
-    <table>
-      <tr>
-        <th>Service</th>
-        <th>Provider</th>
-        <th>Purpose</th>
-        <th>Privacy Policy</th>
-      </tr>
-      <tr>
-        <td>Google AdMob</td>
-        <td>Google LLC</td>
-        <td>Display advertisements</td>
-        <td><a href="https://policies.google.com/privacy">Link</a></td>
-      </tr>
-      <tr>
-        <td>Firebase Analytics</td>
-        <td>Google LLC</td>
-        <td>Usage analytics & feature popularity</td>
-        <td><a href="https://firebase.google.com/support/privacy">Link</a></td>
-      </tr>
-      <tr>
-        <td>Firebase Crashlytics</td>
-        <td>Google LLC</td>
-        <td>Crash reporting & bug fixes</td>
-        <td><a href="https://firebase.google.com/support/privacy">Link</a></td>
-      </tr>
-    </table>
-  </section>
-
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- 6. PERMISSIONS                              -->
-  <!-- ═══════════════════════════════════════════ -->
-  <section>
-    <h2>6. Permissions We Request</h2>
-    <p>PixelKit requests the following Android permissions:</p>
-    <ul>
-      <li><strong>Internet:</strong> Required for loading advertisements.</li>
-      <li><strong>Camera:</strong> Required to capture photos directly within the app (e.g., Background Remover, Circle Crop, Collage Maker).</li>
-      <li><strong>Read External Storage / Read Media Images:</strong> Required to select images from your gallery for processing.</li>
-      <li><strong>Write External Storage:</strong> Required to save processed images (edited photos, PDFs, compressed files) to your device storage.</li>
-    </ul>
-    <div class="highlight">
-      <strong>Important:</strong> We request the minimum permissions necessary. You can deny any permission, though doing so may limit certain features (e.g., denying Camera prevents in-app photo capture).
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- 7. DATA STORAGE & SECURITY                   -->
-  <!-- ═══════════════════════════════════════════ -->
-  <section>
-    <h2>7. Data Storage & Security</h2>
-    <p>
-      <strong>Local Processing:</strong> All image editing, compression, conversion, and other processing occurs entirely on your device. Your images never leave your phone.
-    </p>
-    <p>
-      <strong>Temporary Files:</strong> PixelKit may create temporary files during processing (e.g., when exporting a PDF or creating a collage). These are stored in your device's temporary directory and are automatically cleared by the operating system.
-    </p>
-    <p>
-      <strong>Analytics Data:</strong> Usage analytics and crash logs are transmitted securely (encrypted in transit via HTTPS) to Google's Firebase servers.
-    </p>
-    <p>
-      <strong>Data Retention:</strong> We do not retain personal data. Analytics data is handled according to Google's data retention policies. You can request deletion of your analytics data by contacting us.
-    </p>
-  </section>
-
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- 8. CHILDREN'S PRIVACY                       -->
-  <!-- ═══════════════════════════════════════════ -->
-  <section>
-    <h2>8. Children's Privacy</h2>
-    <p>
-      PixelKit is <strong>not designed for children under the age of 13</strong> (or the applicable minimum age in your jurisdiction).
-      We do not knowingly collect personal information from children.
-    </p>
-    <p>
-      If you believe we have inadvertently collected data from a child under 13, please contact us immediately and we will delete such information promptly.
-    </p>
-  </section>
-
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- 9. YOUR RIGHTS                              -->
-  <!-- ═══════════════════════════════════════════ -->
-  <section>
-    <h2>9. Your Rights</h2>
-    <p>Depending on your location, you may have the following rights regarding your data:</p>
-    <ul>
-      <li><strong>Access:</strong> Request a copy of the personal data we hold about you.</li>
-      <li><strong>Deletion:</strong> Request deletion of your data.</li>
-      <li><strong>Correction:</strong> Request correction of inaccurate data.</li>
-      <li><strong>Opt-Out:</strong> Opt out of personalized advertising.</li>
-      <li><strong>Portability:</strong> Request your data in a portable format.</li>
-    </ul>
-    <p>To exercise any of these rights, please contact us using the information below.</p>
-  </section>
-
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- 10. CHANGES TO THIS POLICY                  -->
-  <!-- ═══════════════════════════════════════════ -->
-  <section>
-    <h2>10. Changes to This Policy</h2>
-    <p>
-      We may update this Privacy Policy from time to time to reflect changes in our practices, services, or legal requirements.
-      When we make significant changes, we will update the "Last Updated" date at the top of this page.
-    </p>
-    <p>
-      We encourage you to review this Privacy Policy periodically. Your continued use of PixelKit after any changes constitutes acceptance of the updated policy.
-    </p>
-  </section>
-
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- 11. OPEN SOURCE LICENSES                    -->
-  <!-- ═══════════════════════════════════════════ -->
-  <section>
-    <h2>11. Open Source Licenses</h2>
-    <p>PixelKit uses the following open-source software:</p>
-    <ul>
-      <li>Flutter SDK — BSD License</li>
-      <li>Google Mobile Ads SDK — Apache 2.0</li>
-      <li>image (Dart image processing) — Apache 2.0</li>
-      <li>Provider (state management) — MIT License</li>
-      <li>qr_flutter — BSD License</li>
-      <li>share_plus — BSD License</li>
-      <li>And other packages as listed in the app's About section</li>
-    </ul>
-    <p>Full open-source attribution is available within the PixelKit app under <strong>Settings → About → Open Source Licenses</strong>.</p>
-  </section>
-
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- 12. CONTACT US                              -->
-  <!-- ═══════════════════════════════════════════ -->
-  <section>
-    <h2>12. Contact Us</h2>
-    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your data, please contact us:</p>
-
-    <div class="contact-box">
-      <p><strong>Email:</strong> <a href="mailto:aghani.labs@gmail.com">aghani.labs@gmail.com</a></p>
-      <p><strong>App:</strong> PixelKit — All-in-One Image Tools Studio</p>
-      <p><strong>Developer:</strong> Abdulghani Mawlood</p>
-    </div>
-  </section>
-
-</div>
-
-<!-- ═══════════════════════════════════════════ -->
-<!-- FOOTER                                      -->
-<!-- ═══════════════════════════════════════════ -->
-<div class="footer">
-  <p>© 2026 PixelKit. All rights reserved.</p>
-  <p>This Privacy Policy is effective as of June 15, 2026.</p>
-</div>
-
+    <footer>
+      <p>&copy; 2026 PixelKit. All rights reserved.</p>
+      <p>This Privacy Policy is effective as of June 16, 2026.</p>
+    </footer>
+  </div>
 </body>
 </html>
